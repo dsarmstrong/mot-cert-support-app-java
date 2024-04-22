@@ -1,4 +1,4 @@
-import com.fasterxml.jackson.annotation.JsonProperty;
+import io.qameta.allure.internal.shadowed.jackson.annotation.JsonProperty;
 
 public class AuthPayload {
 

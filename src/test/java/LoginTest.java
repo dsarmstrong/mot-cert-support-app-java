@@ -1,4 +1,4 @@
-//package e2e;
+import com.google.gson.JsonArray;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -16,12 +16,11 @@ public class LoginTest {
 
     @Test
     public void testPageUpdatesToProjectPageAfterLogin() {
-
         WebDriverManager.chromedriver().clearDriverCache().setup();
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
-        WebDriver driver = new ChromeDriver(options);
+        WebDriver driver = new ChromeDriver();
 
         driver.get("http://localhost:8080");
 
