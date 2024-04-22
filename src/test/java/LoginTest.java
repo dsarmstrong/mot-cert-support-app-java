@@ -1,3 +1,4 @@
+//package e2e;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -15,7 +16,8 @@ public class LoginTest {
 
     @Test
     public void testPageUpdatesToProjectPageAfterLogin() {
-        WebDriverManager.chromedriver().setup();
+
+        WebDriverManager.chromedriver().clearDriverCache().setup();
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
